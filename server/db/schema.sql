@@ -41,6 +41,19 @@ CREATE TABLE IF NOT EXISTS styles (
   sale_price VARCHAR(255),
   original_price VARCHAR(255),
   default_style BOOLEAN
-)
+);
 
+CREATE TABLE IF NOT EXISTS cart (
+  id INT PRIMARY KEY,
+  user_session INT,
+  product_id INT,
+  active INT
+);
+
+ALTER TABLE related ADD FOREIGN KEY(current_product_id) REFERENCES products(id);
+ALTER TABLE features ADD FOREIGN KEY(product_id) REFERENCES products(id);
+ALTER TABLE photos ADD FOREIGN KEY(styleId) REFERENCES styles(id);
+ALTER TABLE skus ADD FOREIGN KEY(styleId) REFERENCES styles(id);
+ALTER TABLE styles ADD FOREIGN KEY(productId) REFERENCES products(id);
+ALTER TABLE cart ADD FOREIGN KEY(product_id) REFERENCES products(id);
 

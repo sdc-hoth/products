@@ -27,3 +27,8 @@ COPY products(id, name, slogan, description, category, default_price)
 FROM '/Users/feifeiliang/HR/SDC/products/data/product.csv'
 DELIMITER ','
 CSV HEADER;
+
+COPY cart(id, user_session, product_id, active)
+FROM '/Users/feifeiliang/HR/SDC/products/data/cart.csv'
+DELIMITER ','
+CSV HEADER;
