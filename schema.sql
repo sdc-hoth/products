@@ -57,3 +57,6 @@ ALTER TABLE skus ADD FOREIGN KEY(styleId) REFERENCES styles(id);
 ALTER TABLE styles ADD FOREIGN KEY(productId) REFERENCES products(id);
 ALTER TABLE cart ADD FOREIGN KEY(product_id) REFERENCES products(id);
 
+--create index
+create index products_id_idx on products (id);
+create index styles_id_idx on styles (id);

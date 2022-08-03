@@ -14,3 +14,8 @@ package-lock.json
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+*.pem
+
+newrelic.js
+newrelic_agent.log

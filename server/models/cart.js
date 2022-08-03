@@ -7,7 +7,7 @@ module.exports = {
                   select product_id as sku_id,
                         COUNT(cart.active)
                   from cart
-                  where user_session = 1111
+                  where user_session = $1
                   group by product_id,active
                   )c`;
     try {

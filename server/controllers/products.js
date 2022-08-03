@@ -3,7 +3,7 @@ const models = require('../models');
 module.exports = {
   getProducts: async (req, res) => {
     const {count, page} = req.query;
-    console.log('productsssss here!!!!!!!!!!!!')
+    // console.log('productsssss here!!!!!!!!!!!!')
     try{
       const products = await models.products.getAllProducts(count, page);
       res.status(200).send(products)
@@ -14,7 +14,7 @@ module.exports = {
   },
   getProduct: async (req, res) => {
     const {product_id} = req.params;
-    console.log('product here!!!!!!!!!!!!', product_id)
+    // console.log('product here!!!!!!!!!!!!', product_id)
     try{
       const product = await models.products.getProduct(product_id);
       res.status(200).send(product)
@@ -25,7 +25,7 @@ module.exports = {
   },
   getRelated: async (req, res) => {
     const {product_id} = req.params;
-    console.log('related here!!!!!!!!!!!!', product_id)
+    // console.log('related here!!!!!!!!!!!!', product_id)
     try {
       const related = await models.products.getRelated(product_id);
       res.status(200).send(related)
@@ -36,7 +36,7 @@ module.exports = {
   },
   getStyles: async (req, res) => {
     const {product_id} = req.params;
-    console.log('style  here!!!!!!!!!!!!', product_id)
+    // console.log('style  here!!!!!!!!!!!!', product_id)
     try {
       const styles = await models.products.getStyles(product_id);
       res.status(200).send(styles)
