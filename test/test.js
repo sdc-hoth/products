@@ -6,10 +6,10 @@ export const options = {
   stages: [
     { duration: '15s', target: 50 },
     { duration: '30s', target: 100 },
-    { duration: '15s', target: 200 },
-    // { duration: '30s', target: 800},
-    // { duration: '15s', target: 900 },
-    // { duration: '30s', target: 1000 },
+    { duration: '15s', target: 300 },
+    { duration: '30s', target: 600},
+    { duration: '15s', target: 700 },
+    { duration: '30s', target: 1000 },
     { duration: '30s', target: 0 },
   ],
 }
@@ -27,7 +27,7 @@ export default function() {
   ]
 
   for (const page of pages) {
-    const res = http.get('http://localhost:3005' + page);
+    const res = http.get('http://35.172.201.253:3005' + page);
     sleep(1);
     check(res, {
       'is status 200': r => r.status === 200,

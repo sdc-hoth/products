@@ -19,6 +19,14 @@ app.use((req, res, next) => {
 
 app.use(express.json())
 
+app.get('/loaderio-4a9893ae9f2a54c3ce7dcb59361ab52c.txt', async(req, res) => {
+  try {
+    res.status(200).sendFile(path.join(__dirname, 'loaderio-4a9893ae9f2a54c3ce7dcb59361ab52c.txt'))
+  } catch (e) {
+    console.log('errrrrrr here', e)
+  }
+})
+
 app.use('/products', productsRoutes);
 app.use('/cart', cartRoutes)
 
