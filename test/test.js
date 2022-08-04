@@ -4,12 +4,12 @@ import {sleep, check} from 'k6';
 
 export const options = {
   stages: [
-    { duration: '15s', target: 500 },
-    { duration: '30s', target: 1000 },
-    { duration: '15s', target: 1500 },
-    { duration: '30s', target: 2000 },
-    { duration: '15s', target: 2500 },
-    { duration: '30s', target: 3000 },
+    { duration: '15s', target: 50 },
+    { duration: '30s', target: 100 },
+    { duration: '15s', target: 200 },
+    // { duration: '30s', target: 800},
+    // { duration: '15s', target: 900 },
+    // { duration: '30s', target: 1000 },
     { duration: '30s', target: 0 },
   ],
 }
@@ -35,6 +35,7 @@ export default function() {
       'transaction time < 500ms': r => r.timings.duration < 500,
       'transaction time < 1000ms': r => r.timings.duration < 1000,
       'transaction time < 2000ms': r => r.timings.duration < 2000,
+      'transaction time > 2000ms': r => r.timings.duration > 2000,
 
     })
   }

@@ -49,8 +49,6 @@ module.exports = {
     }
   },
   getStyles: async (product_id) => {
-
-
     const query = `select json_build_object(
                   'product_id', ${product_id},
                   'results',
