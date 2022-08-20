@@ -4,10 +4,10 @@ The goal of this project is to replace the existing API of products section with
 
 ## Technologies
 <span><img src='https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white' /></span>
-<img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" />
+<img src="https://img.shields.io/badge/Express.js-808080?style=for-the-badge&logo=express&logoColor=white" />
 <img src='https://img.shields.io/badge/Amazon_AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white' />
 <img src='https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white' />
-
+<img src='https://camo.githubusercontent.com/22829b0ccec86873d95ab869095d8cf3c78a2ff70b00459966f4833d5f2ab2c3/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d506f737467726553514c2d3431363945313f6c6f676f3d706f737467726573716c266c6f676f436f6c6f723d7768697465267374796c653d666f722d7468652d6261646765' />
 
 
 ## Stress Testing
@@ -24,5 +24,6 @@ Deployed AWS EC2 instances behind Load Balancer to sustain 1000 RPS with an aver
 | POST           | /cart/:userToken                | Adds a product to the cart.                                           | 201
 
 ## Usage
-In the project directory, you can run
-<p><span style='background-color: #5c5c5c'>npm run start<span></p>
+<i>In the project directory, you can run</i>
+
+`npm run start`
