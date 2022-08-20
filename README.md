@@ -3,9 +3,8 @@
 The goal of this project is to replace the existing API of products section with a back end system that can support the full data set and can scale to meet the demands of production traffic for an E-commerce application.
 
 ## Technologies
-<img src='https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white' />
+<span><img src='https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white' /></span>
 <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" />
-<img src='https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white>' />
 <img src='https://img.shields.io/badge/Amazon_AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white' />
 <img src='https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white' />
 
