@@ -1,6 +1,6 @@
 # System Design
 
-The goal of this project is to replace the existing API of products section with a back end system that can support the full data set and can scale to meet the demands of production traffic for an E-commerce application.
+The goal of this project is to replace the existing API of products section with a back end system that can support the full data set and can scale to meet the demands of production traffic for an e-commerce application.
 
 ## Technologies
 <span><img src='https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white' /></span>
@@ -11,7 +11,11 @@ The goal of this project is to replace the existing API of products section with
 
 
 ## Stress Testing
-Deployed AWS EC2 instances behind Load Balancer to sustain 1000 RPS with an average response time of 18ms and 0% error rate.
+Deployed AWS EC2 instances behind Load Balancer to sustain 1000 RPS with an average response time less than 10ms and 0% error rate.
+
+<div align="center">
+<img width="700" alt="" src="https://user-images.githubusercontent.com/97858299/186231146-4618f431-4301-4e0e-9b21-e29107e7fd80.png">
+</div>
 
 ## Routes
 | Request        | Endpoint                        | Returns                                                               | Status
